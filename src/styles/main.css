@@ -3,6 +3,34 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+	.navLink {
+		@apply text-[1.8rem] capitalize font-sans font-light text-center;
+	}
+	.navBtn {
+		@apply px-[2.1rem] my-[0] w-[13rem] h-[3.1rem] text-[1.4rem] rounded-[1rem];
+	}
+	.landingPageBtn {
+		@apply px-[2.6rem] my-[1.5rem] w-max text-[1.8rem]  h-[6.2rem] rounded-[1rem];
+	}
+	.btnPrimary {
+		@apply bg-secondary text-black font-serif;
+	}
+	.btnSecondary {
+		@apply bg-transparent font-sans  border-[0.3rem] border-primary;
+	}
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 10px;
+}
+body {
+	height: 100%;
+}
 #root {
-	height: 100svh;
+	height: fit-content;
 }
